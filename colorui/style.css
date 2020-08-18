@@ -1,0 +1,310 @@
+/* 
+ 项目字体规格
+ 
+列表
+
+列表类型名 text-black text-bold text-sxl
+
+商品名称  text-black text-bold text-xl
+
+副标题  text-gray text-xsl
+
+小标签/说明 text-sm  
+
+ */
+.cu-list.grid>.cu-item {
+	position: relative;
+	display: flex;
+	padding: 20upx 0 30upx;
+	transition-duration: 0s;
+	flex-direction: column
+}
+
+.cu-list.grid>.cu-item:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	width: 200%;
+	height: 200%;
+	border-right: 1px solid rgba(0, 0, 0, .1);
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	border-radius: inherit;
+	content: " ";
+	transform: scale(.5);
+	transform-origin: 0 0;
+	pointer-events: none
+}
+
+.cu-list.grid>.cu-item text {
+	font-family: SimHei;
+	font-weight: bold;
+	display: block;
+	margin-top: 10upx;
+	color: #333333;
+	font-size: 26upx;
+	line-height: 40upx
+}
+
+.check-more {
+	font-family: SimHei;
+	color: #333333;
+	font-size: 26upx;
+	line-height: 40upx
+}
+
+.cuIcon-right {
+	color: #333333;
+}
+
+.sort-title {
+	font-family: SimHei;
+	color: #333333;
+	font-size: 36upx;
+	font-weight: bold;
+}
+
+.font-faml {
+	font-family: SimHei
+}
+
+.text-jiujiu {
+	color: #999999;
+}
+
+
+/*  交互反馈模板样式*/
+.inter-box {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.inter-massge {
+	margin-top: 45%;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-size: 40rpx;
+}
+
+/* 
+ 账号修改
+ */
+
+.changes {
+	/* display: flex; */
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+}
+
+.changes .item-tit {
+	font-size: 40rpx;
+	font-weight: bold;
+	margin-top: 90rpx;
+	color: #333333;
+}
+
+.changes .item-sm {
+	font-size: 28rpx;
+	margin-top: 20rpx;
+	color: #888888;
+}
+
+.changes .item-sm span {
+	margin-left: 10rpx;
+}
+
+
+/* 圆角 */
+.radius10 {
+	border-radius: 10rpx;
+}
+
+.radius20 {
+	border-radius: 20rpx;
+}
+
+.radius30 {
+	border-radius: 30rpx;
+}
+
+.radius40 {
+	border-radius: 40rpx;
+}
+
+.radius50 {
+	border-radius: 50rpx;
+}
+.radius60 {
+	border-radius: 60rpx;
+}
+
+/* app 颜色 */
+.bg-appblue {
+	background: #0099FF;
+	color: #ffffff;
+}
+
+.text-appcolor {
+	color: #0099FF;
+}
+
+.user-image {
+	width: 60rpx;
+	height: 60rpx;
+}
+
+.input-login {
+	width: 60%;
+	text-align: center;
+	margin-top: 50px;
+	height: 88upx;
+	line-height: 88upx;
+}
+
+.width100 {
+	width: 100%;
+	width: 750upx;
+	box-sizing: border-box;
+}
+
+.Image {
+	width: 36rpx;
+	height: 36rpx;
+}
+
+.iconImage {
+	width: 66upx;
+	height: 66upx;
+}
+
+.product-image {
+	width: 100upx;
+	height: 100upx;
+}
+
+.product-title {
+	height: 100upx;
+	line-height: 100upx;
+}
+
+.add-item {
+	height: 64upx;
+	line-height: 64upx;
+}
+
+/* 边框线 */
+.border {
+	border: 1rpx solid #e8e8e8;
+}
+
+.border-gray {
+	border: 1rpx solid #AAAAAA;
+}
+
+.border-bottom {
+	border-bottom: 1rpx solid #e8e8e8;
+}
+
+.border-left {
+	border-left: 1rpx solid #e8e8e8;
+}
+
+.icon-box {
+	width: 50upx;
+	height: 50upx;
+	border-radius: 50upx;
+}
+
+/* 去隔边 */
+.margin-top-none {
+	margin-top: 0;
+}
+
+.margin-right-none {
+	margin-right: 0;
+}
+
+.margin-bottom-none {
+	margin-bottom: 0;
+}
+
+.margin-left-none {
+	margin-left: 0;
+}
+
+/* 去填充 */
+.padding-top-none {
+	padding-top: 0;
+}
+
+.padding-right-none {
+	padding-right: 0;
+}
+
+.padding-bottom-none {
+	padding-bottom: 0;
+}
+
+.padding-left-none {
+	padding-left: 0;
+}
+
+.text-line-h {
+	text-decoration: line-through
+}
+
+/* 自定义背景颜色 */
+.bg-f8 {
+	background: #F8F8F8;
+}
+
+.text-indent {
+	text-indent: 48upx;
+}
+.btn-base{
+	margin-top: 100upx;
+	width: 90%;
+	border-radius: 50upx;
+	font-size: 32upx;
+	line-height: 88upx;
+	color: #fff;
+	background: #0099FF;
+}
+
+/* 切换卡 小碗样式 */
+.cur {
+	content: '';
+	width: 30rpx;
+	height: 14rpx;
+	border-top-left-radius: 8rpx;
+	border-top-right-radius: 8rpx;
+	border-bottom-left-radius: 20rpx;
+	border-bottom-right-radius: 20rpx;
+	background: #0099FF;
+	position: absolute;
+	bottom: 6rpx;
+	left: 50%;
+	transform: translateX(-50%);
+}
+/* 定位 */
+.text-line-h {
+	text-decoration: line-through
+}
+.pos-absolute{
+	position: absolute;
+}
+.pos-relative{
+	position: relative;
+}
+.pos-fixed{
+	position: fixed;
+}
+/* 常用高度 */
+.height88{
+	height: 88rpx;
+}

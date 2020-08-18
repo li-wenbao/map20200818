@@ -1,0 +1,41 @@
+
+.cu-load::before {
+	font-family: "cuIcon";
+	display: inline-block;
+	margin-right: 6rpx;
+	font-size: 28rpx;
+}
+.cu-load.loading::after {
+	content: "定位中...";
+	font-size: 28rpx;
+}
+.cu-load.erro::before {
+	font-size: 28rpx;
+	content: "\e658";
+}
+.cu-load.over::after {
+	content: "定位失败，重新定位";
+	font-size: 28rpx;
+}
+.arrList {
+	position: fixed;
+	background: #FFFFFF;
+	margin-top:88rpx;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 90;
+}
+
+/* 遮布 */
+.listMask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 89;
+	opacity: 0.5;
+	background: #6a7076;
+}
+
